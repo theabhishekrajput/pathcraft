@@ -1,0 +1,29 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="14" fill="#1a1a1a" stroke="#F59E0B" stroke-width="2"/>
+  
+  <!-- Center point -->
+  <circle cx="16" cy="16" r="2" fill="#F59E0B"/>
+  
+  <!-- Compass needle -->
+  <g transform="translate(16, 16)">
+    <!-- North part (red) -->
+    <path d="M0,-12 L2,0 L0,0 L-2,0 Z" fill="#DC2626"/>
+    <!-- South part (orange) -->
+    <path d="M0,0 L2,0 L0,12 L-2,0 Z" fill="#F59E0B"/>
+    
+    <!-- East and West points -->
+    <path d="M12,0 L10,-1 L10,1 Z" fill="#2C3E50" opacity="0.7"/>
+    <path d="M-12,0 L-10,-1 L-10,1 Z" fill="#2C3E50" opacity="0.7"/>
+  </g>
+  
+  <!-- Cardinal direction markers -->
+  <text x="16" y="4" font-family="Arial, sans-serif" font-size="4" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">N</text>
+  <text x="16" y="30" font-family="Arial, sans-serif" font-size="4" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">S</text>
+  <text x="4" y="18" font-family="Arial, sans-serif" font-size="4" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">W</text>
+  <text x="28" y="18" font-family="Arial, sans-serif" font-size="4" font-weight="bold" 
+        text-anchor="middle" fill="#ffffff">E</text>
+</svg>

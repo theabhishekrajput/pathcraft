@@ -1,0 +1,43 @@
+<svg width="200" height="40" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="40" fill="#1a1a1a" rx="8"/>
+  
+  <!-- Compass Needle -->
+  <g transform="translate(15, 20)">
+    <!-- Outer circle -->
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#F59E0B" stroke-width="2"/>
+    <circle cx="0" cy="0" r="2" fill="#F59E0B"/>
+    
+    <!-- Compass needle -->
+    <path d="M0,-10 L3,0 L0,10 L-3,0 Z" fill="#F59E0B"/>
+    <path d="M0,-10 L3,0 L0,0 L-3,0 Z" fill="#DC2626"/>
+  </g>
+  
+  <!-- Route Lines -->
+  <g transform="translate(35, 20)">
+    <!-- Scenic route line -->
+    <path d="M0,0 Q15,-8 30,0 T60,0" stroke="#10B981" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Main route line -->
+    <path d="M0,0 Q15,8 30,0 T60,0" stroke="#2C3E50" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+  </g>
+  
+  <!-- Mountain Silhouette -->
+  <g transform="translate(105, 20)">
+    <path d="M0,10 L5,-5 L10,10 L8,3 L12,-8 L16,10 L14,3 L18,-5 L22,10" 
+          fill="#2C3E50" opacity="0.8"/>
+    <path d="M0,10 L5,-5 L10,10" fill="#F59E0B" opacity="0.6"/>
+  </g>
+  
+  <!-- PathCraft Text -->
+  <text x="135" y="28" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="16" font-weight="600" fill="#ffffff">PathCraft</text>
+  
+  <!-- Subtle gradient overlay -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="40" fill="url(#bgGradient)" rx="8" opacity="0.3"/>
+</svg>

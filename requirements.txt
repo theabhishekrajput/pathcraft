@@ -1,0 +1,9 @@
+# Core app dependencies
+langchain>=1.0,<2.0
+langchain-openai>=1.0,<2.0
+langchain-text-splitters>=1.0,<2.0
+chainlit>=2.0,<3.0
+python-dotenv>=1.0,<2.0
+
+# Optional developer dependency
+# pytest>=8.0,<9.0

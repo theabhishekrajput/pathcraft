@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pathcraft"
+version = "0.1.0"
+description = "Offline travel planning engine with route, scenic, stop, fuel, and itinerary logic"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Abhis" }]
+dependencies = [
+    "langchain>=1.0,<2.0",
+    "langchain-openai>=1.0,<2.0",
+    "langchain-text-splitters>=1.0,<2.0",
+    "chainlit>=2.0,<3.0",
+    "python-dotenv>=1.0,<2.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
